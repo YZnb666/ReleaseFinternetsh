@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Release Finternetsh</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	<style type="text/css">
+		#shuihua{
+			position: absolute;
+			display: none;
+			width: 150px;
+			height: 150px;
+			transition: 0.2s;
+			transform: scale(0.1);
+		}
+		p{
+			margin-top: 80px;
+			font-size: 30px;
+			font-weight: 700;
+		}
+		#foxiang{
+			width: 150px;
+			height: 150px;
+			float: right;
+			transition: 0.2s;
+		}
+		#foxiang:hover{
+			transform: scale(0.9);
+		}
+		#tips{
+			font-size: 20px;
+			float: right;
+		}
+		#help{
+			position: absolute;
+			font-size: 20px;
+			bottom: 0px;
+		}
+	</style>
+</head>
+<body style="background-color: #f6f6f6;">
+	<div style="background-image: url(img/ae91f0693c57d6dd78e4dc7d8f3d1daa.jpeg);height: 275px;background-size: 100% 100%;">
+		<img src="img/59586_miankousucai.com.png" id="shuihua">
+	</div>
+	<img onclick="fishlevelup()" id="foxiang" src="https://ts1.cn.mm.bing.net/th/id/R-C.1fedc48f41550aa47548ebf29b59d10e?rik=U0N%2bPMAiia3EcA&riu=http%3a%2f%2fen.image.51bidlive.com%2fu%2f2021050736756%2f0020.jpg&ehk=inAfQLx6ZGCxtius4QbPHTp2w%2b53igMyrYOX%2bzIO1k0%3d&risl=&pid=ImgRaw&r=0" >
+	<p id="tips">click it to up level(if you have enough merits)</p>
+	<p id="merit">merits:0</p>
+	<p id="needmerits">need:10</p>
+	<p id="level">level:1</p>
+	<div id="help"><a href="help.html">how to play...</a></div>
+	<button type="button" onclick="reset()">RESET</button>
+	<script src="js/main.js"></script>
+</body>
+</html>
