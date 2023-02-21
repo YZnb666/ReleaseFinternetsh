@@ -48,7 +48,6 @@ function reset(){
 function fishlevelup(){
 	if (score >= uplevelmerits){
 		fishlevel++;
-		score = score - uplevelmerits;
 		uplevelmerits = uplevelmerits*2;
 		localStorage.setItem('level',fishlevel);
 		localStorage.setItem('levelmerits',uplevelmerits);
